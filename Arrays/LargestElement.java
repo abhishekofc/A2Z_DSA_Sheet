@@ -1,8 +1,15 @@
 import java.util.*;
-class Solution {
-    public int largestElement(int[] nums) {
+class LargestElement {
+    public static int largElement(int[]  nums) {
         Arrays.sort(nums);
-        return nums[nums.length-1];
+        int largest = nums[nums.length - 1];
+        return largest;
+    }
+    public static void main(String[] args) {
+        int[] nums = {3,2,1,5,2};
+        LargestElement sol = new LargestElement();             //Make an intance of the Solution class
+        int largest = sol.largElement(nums);
+        System.out.print(largest);
     }
 }
 
